@@ -1,16 +1,11 @@
 import React from 'react';
 
+import Navbar from './components/Navbar';
+
 function App() {
   return (
     <div className="App">
-      <section className="document-container">
-        <div className="document-markdown">
-          <textarea placeholder="This is your markdown"/>
-        </div>
-        <div className="document-preview">
-          <textarea placeholder="This is your markdown preview"/>
-        </div>        
-      </section>
+      <Navbar />
     </div>
   );
 }
