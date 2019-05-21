@@ -29,27 +29,29 @@ header > h1 {
   display: flex;
 }
 
-.markdown {
+.markdown, .preview {
   width: 50vw;
 }
 
-.markdown__header {
+.markdown__header, .preview__header {
   background-color: #000;
   color: #fff;
   padding: 0.5em;
+  text-align: center;
 }
 
-.markdown__header > p {
+.markdown__header > p , .preview__header > p{
   margin: 0;
 }
 
-.markdown__textarea {
+.markdown__textarea, .preview__textarea {
   box-sizing: border-box;
   width: 100%;
-  height: 50vh;
+  height: 65vh;
   resize: none;
   padding: 1em;
   font-size: 1.2rem;
   border: 1px solid #ddd;
   border-top: none;
+  overflow-y: scroll;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 
 import DocumentTitle from './DocumentTitle';
 import DocumentMarkdown from './DocumentMarkdown';
+import DocumentPreview from './DocumentPreview';
 
 const Document = () => {
   return (
@@ -9,6 +10,7 @@ const Document = () => {
       <DocumentTitle />
       <div className='document__workspace'>
         <DocumentMarkdown />
+        <DocumentPreview />
       </div>
     </main>
   )
