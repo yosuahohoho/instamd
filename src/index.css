@@ -12,3 +12,14 @@ nav {
 header > h1 {
   margin: 0;
 }
+
+.document__title {
+  margin-top: 2em;
+}
+
+.document__title > input {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  width: 30%;
+  font-size: 1.2em;
+}
