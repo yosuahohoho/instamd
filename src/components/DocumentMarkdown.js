@@ -10,13 +10,12 @@ const DocumentMarkdown = () => {
       <div className='markdown__header'>
         <p>MarkDown</p>
       </div>
-      <textarea 
+      <textarea
+        value={markdown} 
         onChange={handleChange} 
         placeholder='Enter your markdown...'
         className='markdown__textarea'
-      >
-        {markdown}
-      </textarea>
+      />
     </div>
   )
 }
