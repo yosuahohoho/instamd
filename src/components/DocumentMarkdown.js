@@ -1,10 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-const DocumentMarkdown = () => {
-  const [markdown, setMarkdown] = useState('# This is title');
-  const handleChange = (e) => {
-    setMarkdown(e.target.value)
-  }
+const DocumentMarkdown = ({markdown, handleChangeMarkdown}) => {
+
   return (
     <div className='markdown'>
       <div className='markdown__header'>
@@ -12,7 +9,7 @@ const DocumentMarkdown = () => {
       </div>
       <textarea
         value={markdown} 
-        onChange={handleChange} 
+        onChange={handleChangeMarkdown} 
         placeholder='Enter your markdown...'
         className='markdown__textarea'
       />

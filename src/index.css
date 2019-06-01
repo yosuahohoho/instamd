@@ -56,6 +56,10 @@ header > h1 {
   overflow-y: scroll;
 }
 
+.preview__textarea > h3 {
+  margin: 0;
+}
+
 footer {
   text-align: center;
   margin-top: 2em;
