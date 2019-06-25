@@ -47,7 +47,7 @@ header > h1 {
 .markdown__textarea, .preview__textarea {
   box-sizing: border-box;
   width: 100%;
-  height: 60vh;
+  height: 65vh;
   resize: none;
   padding: 1em;
   font-size: 1.2rem;
