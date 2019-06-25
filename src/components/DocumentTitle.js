@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
 
 const DocumentTitle = () => {
-  const [text, setText] = useState('');
+  const [title, setTitle] = useState('');
   const handleChange = (e) => {
-    setText(e.target.value)
+    setTitle(e.target.value)
   }
 
   return (
     <div className='document__title'>
       <input 
         type='text' 
-        value={text} 
+        value={title} 
         onChange={handleChange} 
         name='title'
         placeholder='untitled.md'
