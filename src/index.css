@@ -50,7 +50,8 @@ header > h1 {
   height: 65vh;
   resize: none;
   padding: 1em;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.4;
   border: 1px solid #ddd;
   border-top: none;
   overflow-y: scroll;
