@@ -7,7 +7,7 @@ import DocumentMarkdown from './DocumentMarkdown';
 import DocumentPreview from './DocumentPreview';
 
 const Document = () => {
-  const [markdown, setMarkdown] = useState('')
+  const [markdown, setMarkdown] = useState('## InstaMD - Simple Markdown Previewer')
   const handleChangeMarkdown = (e) => {
     setMarkdown(e.target.value)
   } 
