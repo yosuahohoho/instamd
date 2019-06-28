@@ -6,8 +6,14 @@ import DocumentTitle from './DocumentTitle';
 import DocumentMarkdown from './DocumentMarkdown';
 import DocumentPreview from './DocumentPreview';
 
+marked.setOptions({
+  gfm: true,
+  breaks: true,
+  sanitize: true
+})
+
 const Document = () => {
-  const [markdown, setMarkdown] = useState('## InstaMD - Simple Markdown Previewer')
+  const [markdown, setMarkdown] = useState('# InstaMD - Simple Markdown Previewer')
   const handleChangeMarkdown = (e) => {
     setMarkdown(e.target.value)
   } 
