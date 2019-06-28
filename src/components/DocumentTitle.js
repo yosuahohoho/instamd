@@ -8,6 +8,7 @@ const DocumentTitle = () => {
 
   return (
     <div className='document__title'>
+      <label htmlFor='title'>Document Name</label>
       <input 
         type='text' 
         value={title} 
