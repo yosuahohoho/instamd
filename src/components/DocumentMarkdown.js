@@ -11,6 +11,7 @@ const DocumentMarkdown = ({markdown, handleChangeMarkdown}) => {
         value={markdown} 
         onChange={handleChangeMarkdown} 
         className='markdown__textarea'
+        id='editor'
       />
     </div>
   )
