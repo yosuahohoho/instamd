@@ -7,7 +7,7 @@ const DocumentPreview = ({preview}) => {
             <div className='preview__header'>
                 <p>Preview</p>
             </div>
-            <div className='preview__textarea'>
+            <div className='preview__textarea' id='preview'>
               {preview}
             </div>
         </div>
