@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/instamd/static/css/main.8d5b47c7.chunk.css",
+    "main.js": "/instamd/static/js/main.19a732f2.chunk.js",
+    "main.js.map": "/instamd/static/js/main.19a732f2.chunk.js.map",
+    "runtime~main.js": "/instamd/static/js/runtime~main.26ed1171.js",
+    "runtime~main.js.map": "/instamd/static/js/runtime~main.26ed1171.js.map",
+    "static/js/2.792504fd.chunk.js": "/instamd/static/js/2.792504fd.chunk.js",
+    "static/js/2.792504fd.chunk.js.map": "/instamd/static/js/2.792504fd.chunk.js.map",
+    "index.html": "/instamd/index.html",
+    "precache-manifest.df8b17075e0b9a046d41a154a2db3b6b.js": "/instamd/precache-manifest.df8b17075e0b9a046d41a154a2db3b6b.js",
+    "service-worker.js": "/instamd/service-worker.js",
+    "static/css/main.8d5b47c7.chunk.css.map": "/instamd/static/css/main.8d5b47c7.chunk.css.map"
+  }
+}
