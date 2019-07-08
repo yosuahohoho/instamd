@@ -12,8 +12,34 @@ marked.setOptions({
   sanitize: true
 })
 
+const markdownTemplate = `# InstaMD - Simple Markdown Previewer
+## What is Markdown?
+
+Markdown is a lightweight markup language with plain text formatting syntax.
+Learn more about Markdown at [Wikipedia](https://en.wikipedia.org/wiki/Markdown)
+
+## Some Markdown syntax
+
+Text attributes _italic_, 
+**bold**
+
+Bullet list:
+
+  * React
+  * Svelte
+  * Vue
+
+Numbered list:
+
+  1. javaScript
+  2. Go
+  3. Rust
+
+Learn more about Markdown syntax at [Github Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+`
+
 const Document = () => {
-  const [markdown, setMarkdown] = useState('# InstaMD - Simple Markdown Previewer')
+  const [markdown, setMarkdown] = useState(markdownTemplate)
   const handleChangeMarkdown = (e) => {
     setMarkdown(e.target.value)
   } 
