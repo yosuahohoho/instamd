@@ -90,40 +90,41 @@ header > h2 {
 
 /* MARKDOWN STYLES */
 
-   #preview blockquote {
-    border-left: 3px solid #224B4B;
-    color: #224B4B;
-    padding-left: 5px;
-    margin-left: 25px;
-  }
+#preview blockquote {
+  border-left: 3px solid #224B4B;
+  color: #224B4B;
+  padding-left: 5px;
+  margin-left: 25px;
+}
 
-  #preview code {
-    padding: 1px 4px 2px 4px;
-    font-size: 12px;
-    font-weight: bold;
-  }
+#preview code {
+  padding: 1px 4px 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
 
-  #preview pre {
-    background: #e1f5fe;
-    padding: 5px 0 5px 5px;
-  }
+#preview pre {
+  background: #e1f5fe;
+  padding: 5px 0 5px 5px;
+}
 
-  #preview h1 {
-    border-bottom: 2px solid #eee;
-  }
+#preview h1 {
+  border-bottom: 2px solid #eee;
+}
 
-  #preview h2 {
-    border-bottom: 1px solid #eee;
-  }
+#preview h2 {
+  border-bottom: 1px solid #eee;
+}
 
-  #preview table {
-    border-collapse: collapse;
-  }
+#preview table {
+  border-collapse: collapse;
+}
 
-  #preview td, th {
-    border: 2px solid #eee;;
-    padding: 0.5em;
-  }
+#preview td, th {
+  border: 2px solid #eee;;
+  padding: 0.5em;
+}
+
 
 /* Footer */
 footer {
