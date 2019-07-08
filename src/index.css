@@ -43,6 +43,21 @@ header > h2 {
   width: 50vw;
 }
 
+/* Document Workspace in mobile device */
+@media screen and (max-width: 32em) {
+  .document__workspace {
+    flex-direction: column;
+  }
+
+  .markdown, .preview {
+    width: 100vw;
+  }
+
+  .document__title > input {
+    width: 100%;
+  }
+}
+
 .markdown__header, .preview__header {
   border: 1px solid #ddd;
   color: #9e9e9e;
@@ -114,5 +129,5 @@ header > h2 {
 footer {
   text-align: center;
   color: #9e9e9e;
-  padding-top: .8em;
+  padding: .5em;
 }
