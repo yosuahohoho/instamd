@@ -1,15 +1,22 @@
 import React from 'react';
 
-const DocumentMarkdown = ({markdown, handleChangeMarkdown}) => {
+import Toolbar from './Toolbar';
+
+const DocumentMarkdown = ({markdown, handleChangeMarkdown, handleReset}) => {
 
   return (
     <div className='markdown'>
-      <div className='markdown__header'>
-        <p>MarkDown</p>
-      </div>
+      <Toolbar>
+        <div className='document__toolbar__title'>
+        <span>Markdown</span>
+        </div>
+        <div className='document__toolbar__buttons'>
+          <button onClick={handleReset}>Reset</button>
+        </div>
+      </Toolbar>
       <textarea
-        value={markdown} 
-        onChange={handleChangeMarkdown} 
+        value={markdown}
+        onChange={handleChangeMarkdown}
         className='markdown__textarea'
         id='editor'
       />

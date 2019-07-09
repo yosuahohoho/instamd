@@ -42,13 +42,19 @@ const Document = () => {
   const [markdown, setMarkdown] = useState(markdownTemplate)
   const handleChangeMarkdown = (e) => {
     setMarkdown(e.target.value)
-  } 
+  }
+  
+  const handleReset = () => setMarkdown('') 
 
   return (
     <main className='document'>
       <DocumentName />
       <div className='document__workspace'>
-        <DocumentMarkdown markdown={markdown} handleChangeMarkdown={handleChangeMarkdown}/>
+        <DocumentMarkdown 
+          markdown={markdown} 
+          handleChangeMarkdown={handleChangeMarkdown}
+          handleReset={handleReset}
+        />
         <DocumentPreview preview={ReactHtmlParser(marked(markdown))}/>
       </div>
     </main>
