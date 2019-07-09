@@ -11,7 +11,7 @@ const DocumentName = () => {
       <label htmlFor='title'>Document Name</label>
       <input 
         type='text' 
-        value={title} 
+        value={name} 
         onChange={handleChange} 
         name='title'
         placeholder='untitled.md'
