@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 
-const DocumentTitle = () => {
-  const [title, setTitle] = useState('');
+const DocumentName = () => {
+  const [name, setName] = useState('');
   const handleChange = (e) => {
-    setTitle(e.target.value)
+    setName(e.target.value)
   }
 
   return (
@@ -20,4 +20,4 @@ const DocumentTitle = () => {
   )
 }
 
-export default DocumentTitle;
+export default DocumentName;

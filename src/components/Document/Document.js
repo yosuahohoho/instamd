@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import marked from 'marked';
 import ReactHtmlParser from 'react-html-parser';
 
-import DocumentTitle from './DocumentTitle';
+import DocumentName from './DocumentName';
 import DocumentMarkdown from './DocumentMarkdown';
 import DocumentPreview from './DocumentPreview';
 
@@ -46,7 +46,7 @@ const Document = () => {
 
   return (
     <main className='document'>
-      <DocumentTitle />
+      <DocumentName />
       <div className='document__workspace'>
         <DocumentMarkdown markdown={markdown} handleChangeMarkdown={handleChangeMarkdown}/>
         <DocumentPreview preview={ReactHtmlParser(marked(markdown))}/>
