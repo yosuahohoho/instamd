@@ -118,10 +118,6 @@ header > h2 {
   border-bottom: 2px solid #eee;
 }
 
-#preview h2 {
-  border-bottom: 1px solid #eee;
-}
-
 #preview table {
   border-collapse: collapse;
 }
