@@ -31,7 +31,7 @@ const useSessionStorage = storageKey => {
   // When data changes set sessionStorage to current data.
   useEffect(() => {
     sessionStorage.setItem(storageKey, data)
-  }, [data])
+  })
 
   return [data, setData]
 
@@ -45,7 +45,9 @@ const Document = () => {
     setMarkdown(e.target.value)
   }
   
-  const handleResetMarkdown = () => setMarkdown('') 
+  const handleResetMarkdown = () => {
+    setMarkdown('')
+  } 
 
   return (
     <main className='document'>
