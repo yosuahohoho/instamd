@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import marked from 'marked';
 import ReactHtmlParser from 'react-html-parser';
 
@@ -12,17 +12,31 @@ marked.setOptions({
   sanitize: true
 })
 
-const markdownTemplate = `# InstaMD - Simple Markdown Previewer
-## What is Markdown?
+const useSessionStorage = storageKey => {
+  const markdownTemplate = `
+  # InstaMD - Simple Markdown Previewer
+  ## What is Markdown?
 
-Markdown is a lightweight markup language with plain text formatting syntax.
-Learn more about Markdown: 
- * [Wikipedia](https://en.wikipedia.org/wiki/Markdown)
- * [Github Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-`
+  Markdown is a lightweight markup language with plain text formatting syntax.
+  Learn more about Markdown:
+
+  * [Wikipedia](https://en.wikipedia.org/wiki/Markdown)
+  * [Github Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+  `
+
+  const [data, setData] = useState(sessionStorage.getItem(storageKey) || markdownTemplate)
+  
+  useEffect(() => {
+    sessionStorage.setItem(storageKey, data)
+  }, [data])
+
+  return [data, setData]
+
+}
 
 const Document = () => {
-  const [markdown, setMarkdown] = useState(markdownTemplate)
+  const [markdown, setMarkdown] = useSessionStorage('data')
+
   const handleChangeMarkdown = (e) => {
     setMarkdown(e.target.value)
   }
