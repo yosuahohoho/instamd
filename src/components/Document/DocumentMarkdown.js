@@ -2,7 +2,7 @@ import React from 'react';
 
 import Toolbar from './Toolbar';
 
-const DocumentMarkdown = ({markdown, handleChangeMarkdown, handleReset}) => {
+const DocumentMarkdown = ({markdown, handleChangeMarkdown, handleResetMarkdown}) => {
 
   return (
     <div className='markdown'>
@@ -11,7 +11,7 @@ const DocumentMarkdown = ({markdown, handleChangeMarkdown, handleReset}) => {
         <span>Markdown</span>
         </div>
         <div className='document__toolbar__buttons'>
-          <button onClick={handleReset}>Reset</button>
+          <button onClick={handleResetMarkdown}>Reset</button>
         </div>
       </Toolbar>
       <textarea

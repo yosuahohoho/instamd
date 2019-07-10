@@ -45,7 +45,7 @@ const Document = () => {
     setMarkdown(e.target.value)
   }
   
-  const handleReset = () => setMarkdown('') 
+  const handleResetMarkdown = () => setMarkdown('') 
 
   return (
     <main className='document'>
@@ -54,7 +54,7 @@ const Document = () => {
         <DocumentMarkdown 
           markdown={markdown} 
           handleChangeMarkdown={handleChangeMarkdown}
-          handleReset={handleReset}
+          handleResetMarkdown={handleResetMarkdown}
         />
         <DocumentPreview preview={ReactHtmlParser(marked(markdown))}/>
       </div>
