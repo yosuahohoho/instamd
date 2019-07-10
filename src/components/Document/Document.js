@@ -12,6 +12,7 @@ marked.setOptions({
   sanitize: true
 })
 
+// Custom hook for sessionStorage functionality
 const useSessionStorage = storageKey => {
   const markdownTemplate = `
   # InstaMD - Simple Markdown Previewer
@@ -23,9 +24,11 @@ const useSessionStorage = storageKey => {
   * [Wikipedia](https://en.wikipedia.org/wiki/Markdown)
   * [Github Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
   `
-
+  
+  // Use sessionStorage data or initial template when rendering component.
   const [data, setData] = useState(sessionStorage.getItem(storageKey) || markdownTemplate)
   
+  // When data changes set sessionStorage to current data.
   useEffect(() => {
     sessionStorage.setItem(storageKey, data)
   }, [data])
@@ -35,6 +38,7 @@ const useSessionStorage = storageKey => {
 }
 
 const Document = () => {
+  // Use the session storage custom hook.
   const [markdown, setMarkdown] = useSessionStorage('data')
 
   const handleChangeMarkdown = (e) => {
