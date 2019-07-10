@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Navbar */
@@ -61,21 +62,14 @@ header > h2 {
 /* Toolbar */
 .document__toolbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.8em;
   border: 1px solid #ddd;
   color: #9e9e9e;
-  padding: .5em;
   font-size: 0.75rem;
   text-align: left;
   text-transform: uppercase;
-}
-
-.document__toolbar__title {
-  padding: .6em;
-  margin-right: auto;
-}
-
-.document__toolbar__buttons {
-  padding-right: .6em;
 }
 
 .markdown__textarea, .preview__textarea {

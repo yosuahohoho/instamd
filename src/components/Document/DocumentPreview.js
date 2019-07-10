@@ -7,9 +7,9 @@ const DocumentPreview = ({preview}) => {
   return (
     <div className='preview'>
       <Toolbar>
-        <div className="document__toolbar__title">
+        <p className="document__toolbar__title">
           Preview
-        </div>
+        </p>
       </Toolbar>
       <div className='preview__textarea' id='preview'>
         {preview}

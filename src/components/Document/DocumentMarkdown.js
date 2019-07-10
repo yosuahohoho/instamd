@@ -7,9 +7,9 @@ const DocumentMarkdown = ({markdown, handleChangeMarkdown, handleResetMarkdown})
   return (
     <div className='markdown'>
       <Toolbar>
-        <div className='document__toolbar__title'>
-        <span>Markdown</span>
-        </div>
+        <p className='document__toolbar__title'>
+        Markdown
+        </p>
         <div className='document__toolbar__buttons'>
           <button onClick={handleResetMarkdown}>Reset</button>
         </div>
