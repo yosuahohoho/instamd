@@ -14,16 +14,15 @@ marked.setOptions({
 
 // Custom hook for sessionStorage functionality
 const useSessionStorage = storageKey => {
-  const markdownTemplate = `# InstaMD - Simple Markdown Previewer
-  
+  const markdownTemplate =`# InstaMD - Simple Markdown Previewer
   ## What is Markdown?
 
   Markdown is a lightweight markup language with plain text formatting syntax.
+  
   Learn more about Markdown:
-
+  
   * [Wikipedia](https://en.wikipedia.org/wiki/Markdown)
-  * [Github Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-  `
+  * [Github Mastering Markdown](https://guides.github.com/features/mastering-markdown/)`
   
   // Use sessionStorage data or initial template when rendering component.
   const [data, setData] = useState(sessionStorage.getItem(storageKey) || markdownTemplate)
