@@ -75,6 +75,7 @@ header > h2 {
 .document__toolbar__buttons > .download__link {
   padding-right: 1.2em;
   color: #000;
+  outline: none;
 }
 
 .markdown__textarea, .preview__textarea {
