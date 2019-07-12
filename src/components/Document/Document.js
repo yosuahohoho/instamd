@@ -14,8 +14,8 @@ marked.setOptions({
 
 // Custom hook for sessionStorage functionality
 const useSessionStorage = storageKey => {
-  const markdownTemplate = `
-  # InstaMD - Simple Markdown Previewer
+  const markdownTemplate = `# InstaMD - Simple Markdown Previewer
+  
   ## What is Markdown?
 
   Markdown is a lightweight markup language with plain text formatting syntax.
