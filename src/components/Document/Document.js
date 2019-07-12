@@ -12,20 +12,22 @@ marked.setOptions({
   sanitize: true
 })
 
-// Custom hook for sessionStorage functionality
-const useSessionStorage = storageKey => {
-  const markdownTemplate =`# InstaMD - Simple Markdown Previewer
-  ## What is Markdown?
+const STARTER_MD = 
+`# InstaMD - Simple Markdown Previewer
+## What is Markdown?
 
-  Markdown is a lightweight markup language with plain text formatting syntax.
+Markdown is a lightweight markup language with plain text formatting syntax.
   
-  Learn more about Markdown:
+Learn more about Markdown:
   
-  * [Wikipedia](https://en.wikipedia.org/wiki/Markdown)
-  * [Github Mastering Markdown](https://guides.github.com/features/mastering-markdown/)`
-  
+* [Wikipedia](https://en.wikipedia.org/wiki/Markdown)
+* [Github Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+`
+
+// Custom hook for sessionStorage functionality
+const useSessionStorageState = storageKey => {
   // Use sessionStorage data or initial template when rendering component.
-  const [data, setData] = useState(sessionStorage.getItem(storageKey) || markdownTemplate)
+  const [data, setData] = useState(sessionStorage.getItem(storageKey) || STARTER_MD)
   
   // When data changes set sessionStorage to current data.
   useEffect(() => {
@@ -33,27 +35,38 @@ const useSessionStorage = storageKey => {
   })
 
   return [data, setData]
-
 }
 
 const Document = () => {
-  // Use the session storage custom hook.
-  const [markdown, setMarkdown] = useSessionStorage('data')
-
+  // hooks for markdown using useSessionsStorageState custom hook
+  const [markdown, setMarkdown] = useSessionStorageState('data')
   const handleChangeMarkdown = (e) => {
     setMarkdown(e.target.value)
   }
-  
   const handleResetMarkdown = () => {
     setMarkdown('')
-  } 
+  }
+  
+  // hooks for file name
+  const [name, setName] = useState('');
+  const handleChangeName = (e) => {
+    setName(e.target.value)
+  }
+  
+  // Create file url using blob.
+  const createURL = () => {
+    const blob = new Blob([markdown], {type: 'text/markdown'})
+    return window.URL.createObjectURL(blob)
+  }
 
   return (
     <main className='document'>
-      <DocumentName />
+      <DocumentName name={name} handleChangeName={handleChangeName}/>
       <div className='document__workspace'>
         <DocumentMarkdown 
           markdown={markdown} 
+          url={createURL()}
+          fileName={name}
           handleChangeMarkdown={handleChangeMarkdown}
           handleResetMarkdown={handleResetMarkdown}
         />

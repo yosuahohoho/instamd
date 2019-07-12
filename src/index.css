@@ -72,6 +72,11 @@ header > h2 {
   text-transform: uppercase;
 }
 
+.document__toolbar__buttons > .download__link {
+  padding-right: 1.2em;
+  color: #000;
+}
+
 .markdown__textarea, .preview__textarea {
   box-sizing: border-box;
   width: 100%;

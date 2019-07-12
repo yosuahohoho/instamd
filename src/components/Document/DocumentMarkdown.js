@@ -1,8 +1,15 @@
 import React from 'react';
 
 import Toolbar from './Toolbar';
+import Download from './Download';
 
-const DocumentMarkdown = ({markdown, handleChangeMarkdown, handleResetMarkdown}) => {
+const DocumentMarkdown = (
+  { markdown, 
+    url,
+    fileName,
+    handleChangeMarkdown, 
+    handleResetMarkdown 
+  }) => {
 
   return (
     <div className='markdown'>
@@ -11,6 +18,7 @@ const DocumentMarkdown = ({markdown, handleChangeMarkdown, handleResetMarkdown})
         Markdown
         </p>
         <div className='document__toolbar__buttons'>
+          <Download url={url} fileName={fileName} />
           <button onClick={handleResetMarkdown}>Reset</button>
         </div>
       </Toolbar>

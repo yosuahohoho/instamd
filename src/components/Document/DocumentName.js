@@ -1,10 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-const DocumentName = () => {
-  const [name, setName] = useState('');
-  const handleChange = (e) => {
-    setName(e.target.value)
-  }
+const DocumentName = ({ name, handleChangeName }) => {
 
   return (
     <div className='document__title'>
@@ -12,7 +8,7 @@ const DocumentName = () => {
       <input 
         type='text' 
         value={name} 
-        onChange={handleChange} 
+        onChange={handleChangeName} 
         name='title'
         placeholder='untitled.md'
       />
