@@ -53,7 +53,7 @@ const Document = () => {
     setName(e.target.value)
   }
   
-  // Create file url using blob.
+  // Create markdown file url using blob.
   const createURL = () => {
     const blob = new Blob([markdown], {type: 'text/markdown'})
     return window.URL.createObjectURL(blob)
