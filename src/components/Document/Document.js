@@ -21,6 +21,35 @@ Learn more about Markdown:
   
 * [Wikipedia](https://en.wikipedia.org/wiki/Markdown)
 * [Github Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+
+## Text Style
+I'm normal
+**I'm Bold**
+*I'm Italic*
+
+## Image
+![Unsplash Image](https://source.unsplash.com/random/150x100)
+
+## Blockquotes
+As Captain Turtlesie said:
+
+> Slow and steady is a key for learning.
+
+## Inline Code
+I think you should use an
+\`<div>\` element here instead.
+
+## Code Block
+\`\`\`javascript
+console.log('Hello mark down!')
+\`\`\`
+
+## Tables
+Monster | Country
+------------ | -------------
+Gojira | Japan
+Buto Ijo | Indonesia
+Hydra | Greece 
 `
 
 // Custom hook for sessionStorage functionality
