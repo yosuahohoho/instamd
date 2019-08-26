@@ -29,10 +29,10 @@ header > h2 {
 
 .document__name > input {
   border: none;
+  background-color: #eee;
   padding: 0.3em;
   width: 30%;
   font-size: 1rem;
-  
 }
 
 /* Document Workspace */
@@ -44,8 +44,12 @@ header > h2 {
   width: 50vw;
 }
 
-/* Document Workspace in mobile device */
+/* Document Name and Workspace in mobile device */
 @media screen and (max-width: 32em) {
+  .document__name > input {
+    width: 70%;
+  }
+
   .document__workspace {
     flex-direction: column;
   }
