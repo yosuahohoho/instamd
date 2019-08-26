@@ -17,17 +17,17 @@ header > h2 {
 }
 
 /* Document Title */
-.document__title {
+.document__name {
   margin: 1em;
   text-align: left;
 }
 
-.document__title > label {
+.document__name > label {
   display: block;
   padding-bottom: 0.5em;
 }
 
-.document__title > input {
+.document__name > input {
   border: none;
   padding: 0.3em;
   width: 30%;
