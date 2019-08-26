@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/instamd/static/css/main.24c3d630.chunk.css",
-    "main.js": "/instamd/static/js/main.6f97fcdc.chunk.js",
-    "main.js.map": "/instamd/static/js/main.6f97fcdc.chunk.js.map",
+    "main.css": "/instamd/static/css/main.e5f085a4.chunk.css",
+    "main.js": "/instamd/static/js/main.d2b7859b.chunk.js",
+    "main.js.map": "/instamd/static/js/main.d2b7859b.chunk.js.map",
     "runtime~main.js": "/instamd/static/js/runtime~main.26ed1171.js",
     "runtime~main.js.map": "/instamd/static/js/runtime~main.26ed1171.js.map",
     "static/js/2.792504fd.chunk.js": "/instamd/static/js/2.792504fd.chunk.js",
     "static/js/2.792504fd.chunk.js.map": "/instamd/static/js/2.792504fd.chunk.js.map",
     "index.html": "/instamd/index.html",
-    "precache-manifest.970545f5fbf27346da16e162f4c7fa04.js": "/instamd/precache-manifest.970545f5fbf27346da16e162f4c7fa04.js",
+    "precache-manifest.24a8ea8211e4590103544e7411d2ad48.js": "/instamd/precache-manifest.24a8ea8211e4590103544e7411d2ad48.js",
     "service-worker.js": "/instamd/service-worker.js",
-    "static/css/main.24c3d630.chunk.css.map": "/instamd/static/css/main.24c3d630.chunk.css.map"
+    "static/css/main.e5f085a4.chunk.css.map": "/instamd/static/css/main.e5f085a4.chunk.css.map"
   }
 }

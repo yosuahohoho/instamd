@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/instamd/precache-manifest.970545f5fbf27346da16e162f4c7fa04.js"
+  "/instamd/precache-manifest.24a8ea8211e4590103544e7411d2ad48.js"
 );
 
 self.addEventListener('message', (event) => {
