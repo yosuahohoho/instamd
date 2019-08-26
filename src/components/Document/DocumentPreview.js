@@ -1,15 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-import Toolbar from './Toolbar';
+import Toolbar from './Toolbar'
 
-const DocumentPreview = ({preview}) => {
-   
+const DocumentPreview = ({ preview }) => {
   return (
     <div className='preview'>
       <Toolbar>
-        <p className="document__toolbar__title">
-          Preview
-        </p>
+        <p className='document__toolbar__title'>Preview</p>
       </Toolbar>
       <div className='preview__textarea' id='preview'>
         {preview}
@@ -18,4 +15,4 @@ const DocumentPreview = ({preview}) => {
   )
 }
 
-export default DocumentPreview;
+export default DocumentPreview

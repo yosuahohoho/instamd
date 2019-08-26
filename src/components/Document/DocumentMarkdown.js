@@ -1,22 +1,19 @@
-import React from 'react';
+import React from 'react'
 
-import Toolbar from './Toolbar';
-import Download from './Download';
+import Toolbar from './Toolbar'
+import Download from './Download'
 
-const DocumentMarkdown = (
-  { markdown, 
-    url,
-    fileName,
-    handleChangeMarkdown, 
-    handleResetMarkdown 
-  }) => {
-
+const DocumentMarkdown = ({
+  markdown,
+  url,
+  fileName,
+  handleChangeMarkdown,
+  handleResetMarkdown
+}) => {
   return (
     <div className='markdown'>
       <Toolbar>
-        <p className='document__toolbar__title'>
-        Markdown
-        </p>
+        <p className='document__toolbar__title'>Markdown</p>
         <div className='document__toolbar__buttons'>
           <Download url={url} fileName={fileName} />
           <button onClick={handleResetMarkdown}>Reset</button>
@@ -32,4 +29,4 @@ const DocumentMarkdown = (
   )
 }
 
-export default DocumentMarkdown;
+export default DocumentMarkdown
