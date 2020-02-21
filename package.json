@@ -1,6 +1,6 @@
 {
   "name": "instamd",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "homepage": "https://yosuahohoho.github.io/instamd/",
   "dependencies": {
     "gh-pages": "^2.2.0",
